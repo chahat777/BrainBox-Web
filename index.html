@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BrainBox-Boost Your Learning with the Power of BrainBox!</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+   <meta charset="UTF-10" />
+  <title>BrainBox - Home</title>
+  <!-- 🔝 Header Navbar -->
+  <header class="main-header">
+    <div class="logo">BrainBox</div>
+    <nav>
+      <a href="login.html" class="login-button">Login</a>
+    </nav>
+  </header>
+
+  <header class="hero">
+    <h1>Welcome to <span>BrainBox</span></h1>
+    <p>BrainBox-Boost Your Learning with the Power of BrainBox!</p>
+
+  </header>
+  <main class="main-grid">
+    <section class="card">
+      <h2>📚 School Zone</h2>
+      <p>CBSE quizzes, notes, past papers and more!</p>
+    </section>
+    <section class="card">
+      <h2>🧪 Competitive Prep</h2>
+      <p>JEE, NEET, SSC – Test your skills now!</p>
+    </section>
+    <section class="card">
+      <h2>💻 Skill Booster</h2>
+      <p>Code challenges, tech MCQs, projects.</p>
+    </section>
+    <section class="card">
+      <h2>🌐 GK & Current Affairs</h2>
+      <p>Daily updates, quizzes and leaderboards!</p>
+    </section>
+    
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sab Ke Liye Learning</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to bottom, #001f3f, #001122);
+      color: white;
+    }
+    header {
+      text-align: center;
+      padding: 20px;
+      font-size: 20px;
+      font-weight: bold;
+      color: #00ffff;
+    }
+    nav {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    nav a {
+      margin: 0 15px;
+      color: #00ccff;
+      text-decoration: none;
+    }
+    .card-container {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      padding: 20px;
+    }
+    .card {
+      background: #00ffc3;
+      color: #003333;
+      padding: 20px;
+      border-radius: 15px;
+      width: 250px;
+      margin: 10px;
+      box-shadow: 0 0 20px #00ffff66;
+      cursor: pointer;
+      transition: transform 0.3s;
+    }
+    .card:hover {
+      transform: scale(1.05);
+    }
+    .notes-section {
+      display: none;
+      padding: 10px 30px;
+      animation: fadeIn 0.5s ease-in-out;
+    }
+    .notes-section ul {
+      list-style: none;
+      padding-left: 0;
+    }
+    .notes-section li a {
+      color: #00ffcc;
+      text-decoration: none;
+    }
+    .notes-section li a:hover {
+      text-decoration: underline;
+    }
+    @keyframes fadeIn {
+      from {opacity: 0;}
+      to {opacity: 1;}
+    }
+  </style>
+</head>
+
+  <header><!-- New Subject Button -->
+<button class="note-btn" data-subject="math">🧮 Math Notes</button>
+
+<ul style="list-style:none; padding:0; max-width: 300px;">
+  <li style="margin-bottom:10px;">
+    <a href="pdfs/algebra.pdf" target="_blank" class="button">📘 Algebra Notes</a>
+  </li>
+  <li style="margin-bottom:10px;">
+    <a href="pdfs/calculus.pdf" target="_blank" class="button">📗 Calculus Notes</a>
+  </li>
+  <li style="margin-bottom:10px;">
+    <a href="pdfs/geometry.pdf" target="_blank" class="button">📙 Geometry Notes</a>
+  </li>
+  <li style="margin-bottom:10px;">
+    <a href="pdfs/trigonometry.pdf" target="_blank" class="button">📒 Trigonometry Notes</a>
+  </li>
+  <li style="margin-bottom:10px;">
+    <a href="pdfs/statistics.pdf" target="_blank" class="button">📕 Statistics Notes</a>
+  </li>
+  <li>
+    <a href="pdfs/probability.pdf" target="_blank" class="button">📔 Probability Notes</a>
+  </li>
+</ul>
+
+<style>
+  a.button {
+    display: block;
+    width: 100%;
+    padding: 12px 15px;
+    background-color: #3498db;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  a.button:hover {
+    background-color: #2980b9;
+  }
+</style>
+
+  <div>Stay Strong Guys</div>
+</header>
+
+<div class="notes-section" id="school-zone">
+  <h3>📚 School Zone</h3>
+  <ul>
+    <li><a href="pdfs/science_class9.pdf" target="_blank">🧪 Science (Class 9)</a></li>
+    <li><a href="pdfs/math_class10.pdf" target="_blank">📐 Math (Class 10)</a></li>
+  </ul>
+
+  <!-- 🌐 International Section -->
+  <div class="international-section">
+    <h4>🌐 International Insights</h4>
+    <ul>
+      <li><a href="pdfs/united_nations_facts.pdf" target="_blank">🇺🇳 United Nations Facts</a></li>
+      <li><a href="pdfs/world_affairs.pdf" target="_blank">🌎 Current World Affairs</a></li>
+      <li><a href="pdfs/international_organizations.pdf" target="_blank">🌐 Global Organizations</a></li>
+    </ul>
+  </div>
+</div>
+
+  <div class="card-container">
+    <div class="card" onclick="toggleNotes('school')">📚 School Zone</div>
+    <div class="card" onclick="toggleNotes('competitive')">🧪 Competitive Prep</div>
+    <div class="card" onclick="toggleNotes('skill')">💻 Skill Booster</div>
+    <div class="card" onclick="toggleNotes('gk')">🌍 GK & Current Affairs</div>
+  </div>
+
+  <div id="school" class="notes-section">
+    <h3>📘 School Zone Notes</h3>
+    <ul>
+      <li><a href="pdfs/class9.pdf" target="_blank">Class 9 CBSE Notes</a></li>
+      <li><a href="pdfs/class10.pdf" target="_blank">Class 10 CBSE Notes</a></li>
+      <li><a href="pdfs/sample_papers.pdf" target="_blank">Sample Papers PDF</a></li>
+      <li><a href="pdfs/syllabus.pdf" target="_blank">CBSE Syllabus PDF</a></li>
+    </ul>
+  </div>
+
+  <div id="competitive" class="notes-section">
+    <h3>🧪 Competitive Prep Notes</h3>
+    <ul>
+      <li><a href="pdfs/jee_physics.pdf" target="_blank">JEE Physics Notes</a></li>
+      <li><a href="pdfs/neet_bio.pdf" target="_blank">NEET Biology Notes</a></li>
+      <li><a href="pdfs/ssc_gk.pdf" target="_blank">SSC GK Notes</a></li>
+      <li><a href="pdfs/mock_tests.pdf" target="_blank">Mock Test PDFs</a></li>
+    </ul>
+  </div>
+
+  <div id="skill" class="notes-section">
+    <h3>💻 Skill Booster Notes</h3>
+    <ul>
+      <li><a href="pdfs/python_notes.pdf" target="_blank">Python Notes PDF</a></li>
+      <li><a href="pdfs/java_notes.pdf" target="_blank">Java Notes PDF</a></li>
+      <li><a href="pdfs/cpp_notes.pdf" target="_blank">C++ Notes PDF</a></li>
+      <li><a href="pdfs/dsa_sheet.pdf" target="_blank">DSA Sheet PDF</a></li>
+    </ul>
+  </div>
+
+  <div id="gk" class="notes-section">
+    <h3>🌍 GK & Current Affairs</h3>
+    <ul>
+      <li><a href="pdfs/daily_current.pdf" target="_blank">Daily Current Affairs</a></li>
+      <li><a href="pdfs/weekly_quiz.pdf" target="_blank">Weekly Quiz PDF</a></li>
+      <li><a href="pdfs/static_gk.pdf" target="_blank">Static GK Notes</a></li>
+      <li><a href="pdfs/yearly_summary.pdf" target="_blank">Yearly Summary</a></li>
+    </ul>
+  </div>
+
+  <script>
+    function toggleNotes(id) {
+      const sections = document.querySelectorAll('.notes-section');
+      sections.forEach(sec => sec.style.display = 'none');
+      document.getElementById(id).style.display = 'block';
+    }
+  </script>
+</body>
+
+  </main>
+<footer>
+  <p>❤️ Developed by <strong>Chahat Kumar</strong> — BrainBox Learning Website <br>
+  📧 chahatkumar0101@gmail.com</p>
+</footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Grievance System - Login</title>
+    <style>
+        body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  text-align: center;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.form-box {
+  background-color: #ffffff20;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 0 15px #00ffcc60;
+  width: 300px;
+  backdrop-filter: blur(8px);
+}
+
+input {
+  display: block;
+  width: 90%;
+  margin: 10px auto;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+}
+
+button {
+  padding: 10px 20px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 10px;
+  background: #00ffcc;
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #00ccaa;
+}
+
+@keyframes fadeIn {
+  from {opacity: 0; transform: translateY(-20px);}
+  to {opacity: 1; transform: translateY(0);}
+}
+
+    </style>
+</head>
+<body>
+
+<div class="login-container">
+    <h2>Login</h2>
+    <form id="loginForm" onsubmit="return validateLogin()">
+        <input type="text" id="username" class="input-field" placeholder="Enter username" required>
+        <input type="password" id="password" class="input-field" placeholder="Enter password" required>
+        <button type="submit" class="login-btn">Login</button>
+    </form>
+</div>
+
+<script>
+    // JavaScript to handle form validation and redirect on success
+    function validateLogin() {
+        const username = document.getElementById('username').value;
+        const password = document.getElementById('password').value;
+
+        // Simple validation: change these credentials as necessary
+        if (username === "student" && password === "password123" || username === "Chahat Kumar" && password === "chahat123") {
+            // If valid credentials, redirect to backend page
+            window.location.href = "index.html";
+        }
+        // Simple validation: change these credentials as necessary
+        if (username === "student" && password === "password123" || username === "NitinKumar" && password === "chahat123") {
+            // If valid credentials, redirect to backend page
+            window.location.href = "index.html";
+        }
+         else {
+            // If invalid, alert the user
+            alert("Invalid username or password.");
+        }
+
+        // Return false to prevent the form from submitting normally
+        return false;
+    }
+</script>
+
+</body>
+</html>
